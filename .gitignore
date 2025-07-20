@@ -1,3 +1,4 @@
 libs/
 person.protobuf
-src/com/example/PersonProto*
+src/com/example/*
+!src/com/example/Main.java
