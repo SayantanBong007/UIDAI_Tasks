@@ -2,3 +2,26 @@ libs/
 person.protobuf
 src/com/example/*
 !src/com/example/Main.java
+
+# Ignore everything by default
+JavaToProtoMaven/**
+JavaToProtoGradle/**
+
+# Allow only these files
+!JavaToProtoMaven/pom.xml
+!JavaToProtoMaven/src/main/java/com/example/Main.java
+!JavaToProtoGradle/build.gradle
+!JavaToProtoGradle/settings.gradle
+!JavaToProtoGradle/src/main/java/com/example/Main.java
+
+# Also allow the directories for the allowed files
+!JavaToProtoMaven/src/
+!JavaToProtoMaven/src/main/
+!JavaToProtoMaven/src/main/java/
+!JavaToProtoMaven/src/main/java/com/
+!JavaToProtoMaven/src/main/java/com/example/
+!JavaToProtoGradle/src/
+!JavaToProtoGradle/src/main/
+!JavaToProtoGradle/src/main/java/
+!JavaToProtoGradle/src/main/java/com/
+!JavaToProtoGradle/src/main/java/com/example/
